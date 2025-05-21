@@ -1,0 +1,16 @@
+
+.formRow{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:12px;
+}
+.formRow input{
+    border:black 0.1px solid;
+    border-radius:0.2em;
+    width:20em;
+    height:3em;
+    padding:1em;
+}
+
+
