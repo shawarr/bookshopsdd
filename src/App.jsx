@@ -4,21 +4,21 @@ import Signup from "./pages/Signup";
 import Home from "./pages/Home";
 import Product from "./pages/Product";
 import Cart from "./pages/Cart";
-import Confirm from "./pages/Confirm";
 import RequireAuth from "./components/RequireAuth.jsx";
 
 function App() {
     return (
-        <Router>
+
+        <div className={"bg-gray-900"}><Router>
             <Routes>
-                <Route path="/login" element={<Login />} />
-                <Route path="/signup" element={<Signup />} />
+                <Route path="/login" element={<Login/>}/>
+                <Route path="/signup" element={<Signup/>}/>
 
                 <Route
                     path="/"
                     element={
                         <RequireAuth>
-                            <Home />
+                            <Home/>
                         </RequireAuth>
                     }
                 />
@@ -26,7 +26,7 @@ function App() {
                     path="/product/:id"
                     element={
                         <RequireAuth>
-                            <Product />
+                            <Product/>
                         </RequireAuth>
                     }
                 />
@@ -34,20 +34,13 @@ function App() {
                     path="/cart"
                     element={
                         <RequireAuth>
-                            <Cart />
+                            <Cart/>
                         </RequireAuth>
                     }
                 />
-                <Route
-                    path="/confirm"
-                    element={
-                        <RequireAuth>
-                            <Confirm />
-                        </RequireAuth>
-                    }
-                />
+
             </Routes>
-        </Router>
+        </Router></div>
     );
 }
 export default App;

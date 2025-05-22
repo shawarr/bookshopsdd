@@ -30,7 +30,7 @@ export default function Login () {
         }
     })
     return (
-        <div className={"flex flex-col min-h-screen"}>
+        <div className={"flex flex-col min-h-screen text-white bg-gray-900"}>
             <Header/>
 
             <main className={"flex-grow flex items-center justify-center align-middle shadow-lg rounded-xl p-6 w-full max-w-md mx-auto mt-4 mb-4 transition duration-300 ease-in-out hover:shadow:2xl"}>
